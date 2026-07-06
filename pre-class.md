@@ -16,6 +16,8 @@ This is the simplest version of "show up prepared": watch a short intro video, r
 
 Before you open the notebook, watch the short intro video: **[L04 The Prediction Dream Team](https://youtu.be/BzCfuTZ7qEY)**. It's under 5 minutes and frames the problem you're about to solve. Watching this first makes the notebook click faster.
 
+🕹️ **After the video:** open the [interactive key-concepts page](https://su-ntu-ctp.github.io/6m-data-3.4-Supervised-Learning-Advanced/) and play with it for 10–15 minutes. Drag the sliders, click the buttons — you can't break anything. Arriving in class having *seen* these ideas move makes the session far easier.
+
 ---
 
 ## Step 1 — Try it (~20 min)

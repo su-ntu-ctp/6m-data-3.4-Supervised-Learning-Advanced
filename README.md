@@ -40,11 +40,12 @@
 
 | Phase | Time | Format |
 |---|---|---|
-| Concept walkthrough | ~90 min | Instructor presents core concepts; learners follow along on the [**interactive key-concepts page**](https://su-ntu-ctp.github.io/6m-data-3.4-Supervised-Learning-Advanced/) |
+| Concept recap (slides) | ~45–60 min | Instructor recaps the key concepts with the lesson slides — you already explored the [interactive key-concepts page](https://su-ntu-ctp.github.io/6m-data-3.4-Supervised-Learning-Advanced/) pre-class |
 | Hands-on code-alongs | ~90 min | Three notebooks (~25–30 min each) — Core sections only |
+| Class exit survey | ~15 min | Quick survey to capture what clicked and what didn't — helps shape the next session |
 | (Self-study after class) | self-paced | Each notebook has a 🟡 Extension section + the Kaggle assignment |
 
-**Why this structure?** Same Option A pacing as L01–L03: ~1.5 hours of concepts + ~1.5 hours of hands-on with clearly marked 🟡 Extension boundaries.
+**Why this structure?** Same pacing as L01–L03: ~1 hour of slide-based concept recap + ~1.5 hours of hands-on with clearly marked 🟡 Extension boundaries, closing with a 15-minute exit survey.
 
 ---
 
@@ -59,6 +60,7 @@
 You will:
 - Run `notebooks/01_monday_morning.ipynb` (~15 min) — Marcus's brief, the L03 baseline you're trying to beat
 - Watch two short videos (StatQuest on Random Forest and Gradient Boosting)
+- Explore the [**interactive key-concepts page**](https://su-ntu-ctp.github.io/6m-data-3.4-Supervised-Learning-Advanced/) after the videos (GitHub Pages)
 - Try three mini-exercises with sample answers
 
 ---
@@ -67,7 +69,7 @@ You will:
 
 **Short reference & review →** [**lesson.md**](./lesson.md) (overview, key takeaways, model-shipping checklist, L05→L10 course map)
 
-**Interactive walkthrough →** the [**key concepts page**](https://su-ntu-ctp.github.io/6m-data-3.4-Supervised-Learning-Advanced//) (hosted on GitHub Pages) gives an in-browser tour of the core ideas.
+**Need a recap? →** the [**key concepts page**](https://su-ntu-ctp.github.io/6m-data-3.4-Supervised-Learning-Advanced/) you explored pre-class is there to revisit any time.
 
 **Notebooks — run in order:**
 
@@ -125,7 +127,7 @@ lesson.md                              ← Short reference: overview, takeaways,
 reference.md                           ← Phase 3: Further reading + glossary
 environment.yml                        ← Conda environment spec (no new packages vs L03)
 docs/
-  index.html                           ← Interactive key-concepts walkthrough (served at https://su-ntu-ctp.github.io/6m-data-3.4-Supervised-Learning-Advanced/ via GitHub Pages)
+  index.html                           ← Interactive key-concepts page — explore during pre-class (served at https://su-ntu-ctp.github.io/6m-data-3.4-Supervised-Learning-Advanced/ via GitHub Pages)
 notebooks/
   data/
     northstar_churn.csv                ← Same dataset as L03 (story continuity)
@@ -136,3 +138,9 @@ notebooks/
   assignment.ipynb                     ← Kaggle-style competition (after class)
   optional_extensions.ipynb            ← 🟡 Optional: Ridge/Lasso · Gini vs Entropy · GridSearch vs Random
 ```
+
+---
+
+## Maintainer note
+
+A few notebooks quote **snapshot metrics** from earlier runs (e.g. the L03 baseline F1 ≈ 0.28 in NB 02, and the NB 01 baseline recall/precision constants at the top of NB 04's capacity-sweep cell). These are labelled as snapshots in the notebooks, but if `northstar_churn.csv` or any train/test split is ever regenerated, re-run NB 01 and update those snapshot values to match.
