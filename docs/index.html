@@ -286,7 +286,7 @@ h3 em,h3 strong{color:var(--ntu-crimson)!important;font-style:normal!important;f
     <div>
       <div class="label" style="color:var(--accent)">Chapter Four &middot; Same data, harder algorithms</div>
       <h1>"Try those <em>tree</em>-based <br>models you mentioned."</h1>
-      <p class="cover-lede"><span class="dropcap">M</span>arcus signed off on Sarah's logistic regression on Friday and left her one note: <em>make it better.</em> Same dataset, same target column. By Friday she has to put a decision tree, a random forest, and a gradient booster on the table next to last week's baseline &mdash; and tell the team which one to ship. The week's real lesson isn't which model wins on F1. It's how to tune honestly, compare fairly, and pick the model the team can operate.</p>
+      <p class="cover-lede"><span class="dropcap">M</span>arcus signed off on Sarah's logistic regression yesterday and left her one note: <em>make it better.</em> Same dataset, same target column. By the end of the day she has to put a decision tree, a random forest, and a gradient booster on the table next to yesterday's baseline &mdash; and tell the team which one to ship. The day's real lesson isn't which model wins on F1. It's how to tune honestly, compare fairly, and pick the model the team can operate.</p>
     </div>
     <div class="cover-side">
       <div class="fact-strip">
@@ -415,7 +415,7 @@ h3 em,h3 strong{color:var(--ntu-crimson)!important;font-style:normal!important;f
     <div class="section-title">
       <div class="label">The bake-off</div>
       <h2>F1 wins on paper. <em>Operability</em> wins ties.</h2>
-      <p class="deck">Sarah's Friday slide. Three models, same held-out test set, same five-fold CV. F1 is the scoring metric throughout &mdash; on an imbalanced dataset where churners are the minority class, accuracy is misleading because always predicting "no churn" scores high. F1 balances precision and recall, so it rewards actually finding churners. The tuned random forest edges out gradient boosting by 0.008 CV F1 (0.346 vs 0.338). Whether that gap survives the operational columns &mdash; that's the actual decision.</p>
+      <p class="deck">Sarah's end-of-day slide. Three models, same held-out test set, same five-fold CV. F1 is the scoring metric throughout &mdash; on an imbalanced dataset where churners are the minority class, accuracy is misleading because always predicting "no churn" scores high. F1 balances precision and recall, so it rewards actually finding churners. The tuned random forest edges out gradient boosting by 0.008 CV F1 (0.346 vs 0.338). Whether that gap survives the operational columns &mdash; that's the actual decision.</p>
     </div>
   </div>
 
@@ -537,7 +537,7 @@ h3 em,h3 strong{color:var(--ntu-crimson)!important;font-style:normal!important;f
 
     <div class="qa" data-qn="Q4">
       <span class="hint">&#9656; Click to reveal</span>
-      <b>You tuned the model for <span class="mono">f1</span>. The Friday slide reports <span class="mono">accuracy</span>. What's wrong?</b>
+      <b>You tuned the model for <span class="mono">f1</span>. The final slide reports <span class="mono">accuracy</span>. What's wrong?</b>
       <div class="a">You optimised one thing and reported another. The threshold that maximises F1 is not the same one that maximises accuracy; on imbalanced data they can pull in opposite directions. Use the same scoring metric for tuning, validation, <em>and</em> the business decision &mdash; or be explicit about why they differ.</div>
     </div>
 

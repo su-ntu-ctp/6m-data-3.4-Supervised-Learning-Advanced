@@ -58,7 +58,7 @@
 **Start here →** [**pre-class.md**](./pre-class.md)
 
 You will:
-- Run `notebooks/01_monday_morning.ipynb` (~15 min) — Marcus's brief, the L03 baseline you're trying to beat
+- Run `notebooks/01_morning_briefing.ipynb` (~15 min) — Marcus's brief, the L03 baseline you're trying to beat
 - Watch two short videos (StatQuest on Random Forest and Gradient Boosting)
 - Explore the [**interactive key-concepts page**](https://su-ntu-ctp.github.io/6m-data-3.4-Supervised-Learning-Advanced/) after the videos (GitHub Pages)
 - Try three mini-exercises with sample answers
@@ -75,9 +75,9 @@ You will:
 
 | # | Notebook | Sarah's day | What you explore |
 |---|---|---|---|
-| 02 | [`02_decision_tree_to_forest.ipynb`](./notebooks/02_decision_tree_to_forest.ipynb) | Tuesday | Decision tree mechanics · why a single tree overfits · Random Forest (bagging) |
-| 03 | [`03_gradient_boosting.ipynb`](./notebooks/03_gradient_boosting.ipynb) | Wednesday | Boosting concept · HistGradientBoostingClassifier · feature importance |
-| 04 | [`04_tuning_and_comparison.ipynb`](./notebooks/04_tuning_and_comparison.ipynb) | Thursday | GridSearchCV · model comparison · the Friday-morning recommendation |
+| 02 | [`02_decision_tree_to_forest.ipynb`](./notebooks/02_decision_tree_to_forest.ipynb) | Late morning | Decision tree mechanics · why a single tree overfits · Random Forest (bagging) |
+| 03 | [`03_gradient_boosting.ipynb`](./notebooks/03_gradient_boosting.ipynb) | Early afternoon | Boosting concept · HistGradientBoostingClassifier · feature importance |
+| 04 | [`04_tuning_and_comparison.ipynb`](./notebooks/04_tuning_and_comparison.ipynb) | Late afternoon | GridSearchCV · model comparison · the end-of-day recommendation |
 
 Each notebook opens with a business scenario, guides you through the code with **Pause & Predict** prompts, and ends at a clearly marked 🟡 Extension boundary.
 
@@ -131,10 +131,10 @@ docs/
 notebooks/
   data/
     northstar_churn.csv                ← Same dataset as L03 (story continuity)
-  01_monday_morning.ipynb              ← Pre-class hook: revisit the L03 baseline (~15 min, before class)
-  02_decision_tree_to_forest.ipynb     ← Part 1: Tree → Random Forest (Tuesday, in class)
-  03_gradient_boosting.ipynb           ← Part 2: Gradient Boosting (Wednesday, in class)
-  04_tuning_and_comparison.ipynb       ← Part 3: GridSearch + model comparison (Thursday, in class)
+  01_morning_briefing.ipynb              ← Pre-class hook: revisit the L03 baseline (~15 min, before class)
+  02_decision_tree_to_forest.ipynb     ← Part 1: Tree → Random Forest (late morning, in class)
+  03_gradient_boosting.ipynb           ← Part 2: Gradient Boosting (early afternoon, in class)
+  04_tuning_and_comparison.ipynb       ← Part 3: GridSearch + model comparison (late afternoon, in class)
   assignment.ipynb                     ← Kaggle-style competition (after class)
   optional_extensions.ipynb            ← 🟡 Optional: Ridge/Lasso · Gini vs Entropy · GridSearch vs Random
 ```

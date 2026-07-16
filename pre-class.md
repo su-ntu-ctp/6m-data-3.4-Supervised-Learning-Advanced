@@ -7,7 +7,7 @@ This is the simplest version of "show up prepared": watch a short intro video, r
 | Step | Time | What you do |
 |---|---|---|
 | **1. Watch the intro video** | ~5 min  | [L04 intro video on YouTube](https://youtu.be/BzCfuTZ7qEY) — frames what you'll build in this lesson |
-| **2. Try it** | ~20 min | Open and run `notebooks/01_monday_morning.ipynb` |
+| **2. Try it** | ~20 min | Open and run `notebooks/01_morning_briefing.ipynb` |
 | **3. Reflect** | ~5 min  | Three short questions below |
 
 ---
@@ -22,7 +22,7 @@ Before you open the notebook, watch the short intro video: **[L04 The Prediction
 
 ## Step 1 — Try it (~20 min)
 
-Open **`notebooks/01_monday_morning.ipynb`** in VS Code with the `dsai-m3` kernel. Run every cell top to bottom. Read the markdown between cells. Don't skip any cell.
+Open **`notebooks/01_morning_briefing.ipynb`** in VS Code with the `dsai-m3` kernel. Run every cell top to bottom. Read the markdown between cells. Don't skip any cell.
 
 Marcus's request from yesterday: *"Can you make this model BETTER tomorrow? Try those tree-based models you mentioned."* Same dataset as L03. Sarah trains a single decision tree (overfits), then a random forest (much better), then a tuned gradient-boosted model (a hair better still). The notebook closes with the honest finding that on this dataset all three live within 0.014 F1 of each other.
 

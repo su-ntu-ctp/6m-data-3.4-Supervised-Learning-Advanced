@@ -1,7 +1,7 @@
 # Lesson — L04 Advanced Supervised Learning: Trees & Ensembles
 
 > **Chapter 4 of the NorthStar Retail story.** *Sarah Chen · Customer Experience Analyst · Day 5.*
-> Marcus's brief from yesterday: *"Can you make this model BETTER tomorrow? Try those tree-based models you mentioned."* Same dataset as L03 — `northstar_churn.csv`, 10,000 customers, 11 features, target = `churned`. By Friday Sarah has to show whether trees and ensembles beat the L03 logistic-regression baseline.
+> Marcus's brief from yesterday: *"Can you make this model BETTER tomorrow? Try those tree-based models you mentioned."* Same dataset as L03 — `northstar_churn.csv`, 10,000 customers, 11 features, target = `churned`. By the end of the day Sarah has to show whether trees and ensembles beat the L03 logistic-regression baseline.
 
 This document is a **short reference** — the lesson itself is taught in the notebooks. Read it for orientation before class, then come back for the takeaways, the model-shipping checklist, and the course map.
 
@@ -11,7 +11,7 @@ This document is a **short reference** — the lesson itself is taught in the no
 
 | Stage | Where to go |
 |---|---|
-| **Pre-class** | `pre-class.md` + `notebooks/01_monday_morning.ipynb` |
+| **Pre-class** | `pre-class.md` + `notebooks/01_morning_briefing.ipynb` |
 | **In-class — Part 1: Decision tree → Random forest** | `notebooks/02_decision_tree_to_forest.ipynb` |
 | **In-class — Part 2: Gradient boosting** | `notebooks/03_gradient_boosting.ipynb` |
 | **In-class — Part 3: Tuning & comparison** | `notebooks/04_tuning_and_comparison.ipynb` |
@@ -24,7 +24,7 @@ The notebooks are the spine. Run them in order.
 
 ## Overview
 
-Marcus's L03 question — *can you make this better?* — sends Sarah into the workhorse algorithms of tabular ML: decision trees, random forests, and gradient boosting. By Friday she has three tuned candidates competing against the L03 baseline. The day's real lesson isn't "which algorithm wins" (on real datasets they're often within a few F1 points of each other) — it's how to **tune honestly**, **compare fairly**, and **pick the model the team will actually be able to operate**.
+Marcus's L03 question — *can you make this better?* — sends Sarah into the workhorse algorithms of tabular ML: decision trees, random forests, and gradient boosting. By the end of the day she has three tuned candidates competing against the L03 baseline. The day's real lesson isn't "which algorithm wins" (on real datasets they're often within a few F1 points of each other) — it's how to **tune honestly**, **compare fairly**, and **pick the model the team will actually be able to operate**.
 
 ---
 
