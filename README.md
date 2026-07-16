@@ -1,6 +1,6 @@
 # L04 — Advanced Supervised Learning (Trees & Ensembles)
 
-> *Sarah Chen's fourth week at NorthStar Retail. Friday last week Marcus asked: "Can you make this model BETTER next week? Try those tree-based models you mentioned." This week she does.*
+> *Sarah Chen's fifth day at NorthStar Retail. Yesterday Marcus asked: "Can you make this model BETTER tomorrow? Try those tree-based models you mentioned." Today she does.*
 > By the end of this lesson you will know how to train Random Forest and Gradient Boosting classifiers, how to tune their hyperparameters with cross-validation, and how to choose between competing models with honest evidence.
 
 ---
@@ -22,7 +22,7 @@
 | **Kaggle Competition** | Apply this toolkit on a held-out scoring split | First public leaderboard ranking |
 | **L05 — Unsupervised Learning** | Find structure without labels | Clustering and dimensionality reduction |
 
-**The narrative thread:** Sarah's L03 logistic regression scored recall = 26% at the chosen threshold. This week she has to beat it.
+**The narrative thread:** Sarah's L03 logistic regression scored recall = 26% at the chosen threshold. Today she has to beat it.
 
 ---
 
@@ -40,11 +40,12 @@
 
 | Phase | Time | Format |
 |---|---|---|
-| Concept walkthrough | ~90 min | Instructor presents core concepts; learners follow along on the [**interactive key-concepts page**](https://su-ntu-ctp.github.io/6m-data-3.4-Supervised-Learning-Advanced/) |
+| Concept recap (slides) | ~45–60 min | Instructor recaps the key concepts with the lesson slides — you already explored the [interactive key-concepts page](https://su-ntu-ctp.github.io/6m-data-3.4-Supervised-Learning-Advanced/) pre-class |
 | Hands-on code-alongs | ~90 min | Three notebooks (~25–30 min each) — Core sections only |
+| Class exit survey | ~15 min | Quick survey to capture what clicked and what didn't — helps shape the next session |
 | (Self-study after class) | self-paced | Each notebook has a 🟡 Extension section + the Kaggle assignment |
 
-**Why this structure?** Same Option A pacing as L01–L03: ~1.5 hours of concepts + ~1.5 hours of hands-on with clearly marked 🟡 Extension boundaries.
+**Why this structure?** Same pacing as L01–L03: ~1 hour of slide-based concept recap + ~1.5 hours of hands-on with clearly marked 🟡 Extension boundaries, closing with a 15-minute exit survey.
 
 ---
 
@@ -57,8 +58,9 @@
 **Start here →** [**pre-class.md**](./pre-class.md)
 
 You will:
-- Run `notebooks/01_monday_morning.ipynb` (~15 min) — Marcus's brief, the L03 baseline you're trying to beat
+- Run `notebooks/01_morning_briefing.ipynb` (~15 min) — Marcus's brief, the L03 baseline you're trying to beat
 - Watch two short videos (StatQuest on Random Forest and Gradient Boosting)
+- Explore the [**interactive key-concepts page**](https://su-ntu-ctp.github.io/6m-data-3.4-Supervised-Learning-Advanced/) after the videos (GitHub Pages)
 - Try three mini-exercises with sample answers
 
 ---
@@ -67,15 +69,15 @@ You will:
 
 **Short reference & review →** [**lesson.md**](./lesson.md) (overview, key takeaways, model-shipping checklist, L05→L10 course map)
 
-**Interactive walkthrough →** the [**key concepts page**](https://su-ntu-ctp.github.io/6m-data-3.4-Supervised-Learning-Advanced//) (hosted on GitHub Pages) gives an in-browser tour of the core ideas.
+**Need a recap? →** the [**key concepts page**](https://su-ntu-ctp.github.io/6m-data-3.4-Supervised-Learning-Advanced/) you explored pre-class is there to revisit any time.
 
 **Notebooks — run in order:**
 
 | # | Notebook | Sarah's day | What you explore |
 |---|---|---|---|
-| 02 | [`02_decision_tree_to_forest.ipynb`](./notebooks/02_decision_tree_to_forest.ipynb) | Tuesday | Decision tree mechanics · why a single tree overfits · Random Forest (bagging) |
-| 03 | [`03_gradient_boosting.ipynb`](./notebooks/03_gradient_boosting.ipynb) | Wednesday | Boosting concept · HistGradientBoostingClassifier · feature importance |
-| 04 | [`04_tuning_and_comparison.ipynb`](./notebooks/04_tuning_and_comparison.ipynb) | Thursday | GridSearchCV · model comparison · the Friday-morning recommendation |
+| 02 | [`02_decision_tree_to_forest.ipynb`](./notebooks/02_decision_tree_to_forest.ipynb) | Late morning | Decision tree mechanics · why a single tree overfits · Random Forest (bagging) |
+| 03 | [`03_gradient_boosting.ipynb`](./notebooks/03_gradient_boosting.ipynb) | Early afternoon | Boosting concept · HistGradientBoostingClassifier · feature importance |
+| 04 | [`04_tuning_and_comparison.ipynb`](./notebooks/04_tuning_and_comparison.ipynb) | Late afternoon | GridSearchCV · model comparison · the end-of-day recommendation |
 
 Each notebook opens with a business scenario, guides you through the code with **Pause & Predict** prompts, and ends at a clearly marked 🟡 Extension boundary.
 
@@ -125,14 +127,20 @@ lesson.md                              ← Short reference: overview, takeaways,
 reference.md                           ← Phase 3: Further reading + glossary
 environment.yml                        ← Conda environment spec (no new packages vs L03)
 docs/
-  index.html                           ← Interactive key-concepts walkthrough (served at https://su-ntu-ctp.github.io/6m-data-3.4-Supervised-Learning-Advanced/ via GitHub Pages)
+  index.html                           ← Interactive key-concepts page — explore during pre-class (served at https://su-ntu-ctp.github.io/6m-data-3.4-Supervised-Learning-Advanced/ via GitHub Pages)
 notebooks/
   data/
     northstar_churn.csv                ← Same dataset as L03 (story continuity)
-  01_monday_morning.ipynb              ← Pre-class hook: revisit the L03 baseline (~15 min, before class)
-  02_decision_tree_to_forest.ipynb     ← Part 1: Tree → Random Forest (Tuesday, in class)
-  03_gradient_boosting.ipynb           ← Part 2: Gradient Boosting (Wednesday, in class)
-  04_tuning_and_comparison.ipynb       ← Part 3: GridSearch + model comparison (Thursday, in class)
+  01_morning_briefing.ipynb              ← Pre-class hook: revisit the L03 baseline (~15 min, before class)
+  02_decision_tree_to_forest.ipynb     ← Part 1: Tree → Random Forest (late morning, in class)
+  03_gradient_boosting.ipynb           ← Part 2: Gradient Boosting (early afternoon, in class)
+  04_tuning_and_comparison.ipynb       ← Part 3: GridSearch + model comparison (late afternoon, in class)
   assignment.ipynb                     ← Kaggle-style competition (after class)
   optional_extensions.ipynb            ← 🟡 Optional: Ridge/Lasso · Gini vs Entropy · GridSearch vs Random
 ```
+
+---
+
+## Maintainer note
+
+A few notebooks quote **snapshot metrics** from earlier runs (e.g. the L03 baseline F1 ≈ 0.28 in NB 02, and the NB 01 baseline recall/precision constants at the top of NB 04's capacity-sweep cell). These are labelled as snapshots in the notebooks, but if `northstar_churn.csv` or any train/test split is ever regenerated, re-run NB 01 and update those snapshot values to match.

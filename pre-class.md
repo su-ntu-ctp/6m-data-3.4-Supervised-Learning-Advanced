@@ -7,7 +7,7 @@ This is the simplest version of "show up prepared": watch a short intro video, r
 | Step | Time | What you do |
 |---|---|---|
 | **1. Watch the intro video** | ~5 min  | [L04 intro video on YouTube](https://youtu.be/BzCfuTZ7qEY) — frames what you'll build in this lesson |
-| **2. Try it** | ~20 min | Open and run `notebooks/01_monday_morning.ipynb` |
+| **2. Try it** | ~20 min | Open and run `notebooks/01_morning_briefing.ipynb` |
 | **3. Reflect** | ~5 min  | Three short questions below |
 
 ---
@@ -16,13 +16,15 @@ This is the simplest version of "show up prepared": watch a short intro video, r
 
 Before you open the notebook, watch the short intro video: **[L04 The Prediction Dream Team](https://youtu.be/BzCfuTZ7qEY)**. It's under 5 minutes and frames the problem you're about to solve. Watching this first makes the notebook click faster.
 
+🕹️ **After the video:** open the [interactive key-concepts page](https://su-ntu-ctp.github.io/6m-data-3.4-Supervised-Learning-Advanced/) and play with it for 10–15 minutes. Drag the sliders, click the buttons — you can't break anything. Arriving in class having *seen* these ideas move makes the session far easier.
+
 ---
 
 ## Step 1 — Try it (~20 min)
 
-Open **`notebooks/01_monday_morning.ipynb`** in VS Code with the `dsai-m3` kernel. Run every cell top to bottom. Read the markdown between cells. Don't skip any cell.
+Open **`notebooks/01_morning_briefing.ipynb`** in VS Code with the `dsai-m3` kernel. Run every cell top to bottom. Read the markdown between cells. Don't skip any cell.
 
-Marcus's Friday request: *"Can you make this model BETTER next week? Try those tree-based models you mentioned."* Same dataset as L03. Sarah trains a single decision tree (overfits), then a random forest (much better), then a tuned gradient-boosted model (a hair better still). The notebook closes with the honest finding that on this dataset all three live within 0.014 F1 of each other.
+Marcus's request from yesterday: *"Can you make this model BETTER tomorrow? Try those tree-based models you mentioned."* Same dataset as L03. Sarah trains a single decision tree (overfits), then a random forest (much better), then a tuned gradient-boosted model (a hair better still). The notebook closes with the honest finding that on this dataset all three live within 0.014 F1 of each other.
 
 If this is your first time running a notebook in this repo, see [setup.md](./setup.md) once — you only need to do this for the first lesson.
 

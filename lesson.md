@@ -1,7 +1,7 @@
 # Lesson — L04 Advanced Supervised Learning: Trees & Ensembles
 
-> **Chapter 4 of the NorthStar Retail story.** *Sarah Chen · Customer Experience Analyst · January 2023.*
-> Marcus's brief from Friday: *"Can you make this model BETTER next week? Try those tree-based models you mentioned."* Same dataset as L03 — `northstar_churn.csv`, 10,000 customers, 11 features, target = `churned`. By Friday Sarah has to show whether trees and ensembles beat the L03 logistic-regression baseline.
+> **Chapter 4 of the NorthStar Retail story.** *Sarah Chen · Customer Experience Analyst · Day 5.*
+> Marcus's brief from yesterday: *"Can you make this model BETTER tomorrow? Try those tree-based models you mentioned."* Same dataset as L03 — `northstar_churn.csv`, 10,000 customers, 11 features, target = `churned`. By the end of the day Sarah has to show whether trees and ensembles beat the L03 logistic-regression baseline.
 
 This document is a **short reference** — the lesson itself is taught in the notebooks. Read it for orientation before class, then come back for the takeaways, the model-shipping checklist, and the course map.
 
@@ -11,7 +11,7 @@ This document is a **short reference** — the lesson itself is taught in the no
 
 | Stage | Where to go |
 |---|---|
-| **Pre-class** | `pre-class.md` + `notebooks/01_monday_morning.ipynb` |
+| **Pre-class** | `pre-class.md` + `notebooks/01_morning_briefing.ipynb` |
 | **In-class — Part 1: Decision tree → Random forest** | `notebooks/02_decision_tree_to_forest.ipynb` |
 | **In-class — Part 2: Gradient boosting** | `notebooks/03_gradient_boosting.ipynb` |
 | **In-class — Part 3: Tuning & comparison** | `notebooks/04_tuning_and_comparison.ipynb` |
@@ -24,7 +24,7 @@ The notebooks are the spine. Run them in order.
 
 ## Overview
 
-Marcus's L03 question — *can you make this better?* — sends Sarah into the workhorse algorithms of tabular ML: decision trees, random forests, and gradient boosting. By Friday she has three tuned candidates competing against the L03 baseline. The week's real lesson isn't "which algorithm wins" (on real datasets they're often within a few F1 points of each other) — it's how to **tune honestly**, **compare fairly**, and **pick the model the team will actually be able to operate**.
+Marcus's L03 question — *can you make this better?* — sends Sarah into the workhorse algorithms of tabular ML: decision trees, random forests, and gradient boosting. By the end of the day she has three tuned candidates competing against the L03 baseline. The day's real lesson isn't "which algorithm wins" (on real datasets they're often within a few F1 points of each other) — it's how to **tune honestly**, **compare fairly**, and **pick the model the team will actually be able to operate**.
 
 ---
 
@@ -49,6 +49,33 @@ After tuning, you'll often have two or three candidates within a few F1 points o
 3. **How explainable does this need to be?** If a regulator, a sceptical executive, or an unhappy customer might ask "why did the model flag me?", random forest's feature-importance story beats gradient boosting's. Match the model to the audience that will challenge it.
 
 Skip any of these and you'll ship the model that won on a metric, not the model the business can actually operate.
+
+---
+
+## Key concepts — plain-English review
+
+A quick self-check before the course map. Read each concept; if any feels fuzzy, jump back to the notebook Part that teaches it.
+
+**Decision tree** — A model that asks a series of yes/no questions about the data ("tenure under 12 months?") and follows the answers down branches to a prediction. Easy to read, easy to overgrow.
+*Real-world use:* A telephone triage nurse's flowchart — "chest pain? → yes → call ambulance" — is a hand-built decision tree.
+
+**Overfitting** — A model that memorises the quirks of its training data instead of learning general patterns; it aces the past and flops on new cases. Deep, unpruned trees are the classic offenders.
+*Real-world use:* A student who memorises last year's exam answers word-for-word and fails when the questions change slightly.
+
+**Bagging / random forest** — Train many trees, each on a random sample of the data with random subsets of features, then let them vote. Individual trees are erratic; the crowd's average is stable.
+*Real-world use:* Asking 100 independent property agents to value a house and averaging — one agent may be way off, the average rarely is. The robust default for tabular data like NorthStar's churn table.
+
+**Boosting / gradient boosting** — Build trees one after another, each new tree focusing on the mistakes the ensemble is still making. Higher accuracy ceiling than a forest, but touchier to tune and easier to overfit.
+*Real-world use:* Banks' credit-risk models and Kaggle-winning retail demand forecasts are usually gradient-boosted trees.
+
+**Hyperparameter tuning** — Systematically trying different model settings (tree depth, learning rate, number of trees) inside cross-validation, so the winner earned its score on unseen folds rather than luck.
+*Real-world use:* A streaming service grid-searching its recommender's settings before rollout — same discipline Sarah uses on the churn booster.
+
+**Feature importance** — A ranking of which inputs the ensemble leaned on most. It tells you *what* drove predictions overall — useful for explanation and for spotting suspicious shortcuts.
+*Real-world use:* An insurer discovering "months since last claim" dominates its pricing model — a story executives and regulators can follow.
+
+**The interpretability trade-off** — More complex models often score slightly better but are harder to explain, maintain, and debug. The best F1 isn't automatically the model you ship.
+*Real-world use:* A hospital may choose a slightly less accurate but explainable readmission model, because doctors won't act on a black box — the same call Sarah faces when the booster beats the forest by one F1 point.
 
 ---
 

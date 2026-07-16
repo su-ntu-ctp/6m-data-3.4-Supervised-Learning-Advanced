@@ -32,7 +32,7 @@ code .
 ```
 
 Then in VS Code:
-1. Open `notebooks/01_monday_morning.ipynb`
+1. Open `notebooks/01_morning_briefing.ipynb`
 2. Top-right → **Select Kernel** → `dsai-m3` (Python 3.11)
 3. **Run All**
 
@@ -145,7 +145,7 @@ On WSL you'll see a green `WSL: Ubuntu` indicator in the bottom-left.
 
 ## 6. Verify your setup
 
-Open `notebooks/01_monday_morning.ipynb`.
+Open `notebooks/01_morning_briefing.ipynb`.
 
 1. **Top-right of the notebook → "Select Kernel"** → pick `dsai-m3` (Python 3.11)
 2. Run the **first code cell**
