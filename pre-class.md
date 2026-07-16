@@ -24,7 +24,7 @@ Before you open the notebook, watch the short intro video: **[L04 The Prediction
 
 Open **`notebooks/01_monday_morning.ipynb`** in VS Code with the `dsai-m3` kernel. Run every cell top to bottom. Read the markdown between cells. Don't skip any cell.
 
-Marcus's Friday request: *"Can you make this model BETTER next week? Try those tree-based models you mentioned."* Same dataset as L03. Sarah trains a single decision tree (overfits), then a random forest (much better), then a tuned gradient-boosted model (a hair better still). The notebook closes with the honest finding that on this dataset all three live within 0.014 F1 of each other.
+Marcus's request from yesterday: *"Can you make this model BETTER tomorrow? Try those tree-based models you mentioned."* Same dataset as L03. Sarah trains a single decision tree (overfits), then a random forest (much better), then a tuned gradient-boosted model (a hair better still). The notebook closes with the honest finding that on this dataset all three live within 0.014 F1 of each other.
 
 If this is your first time running a notebook in this repo, see [setup.md](./setup.md) once — you only need to do this for the first lesson.
 

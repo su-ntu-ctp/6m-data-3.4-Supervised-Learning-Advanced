@@ -1,6 +1,6 @@
 # L04 — Advanced Supervised Learning (Trees & Ensembles)
 
-> *Sarah Chen's fourth week at NorthStar Retail. Friday last week Marcus asked: "Can you make this model BETTER next week? Try those tree-based models you mentioned." This week she does.*
+> *Sarah Chen's fifth day at NorthStar Retail. Yesterday Marcus asked: "Can you make this model BETTER tomorrow? Try those tree-based models you mentioned." Today she does.*
 > By the end of this lesson you will know how to train Random Forest and Gradient Boosting classifiers, how to tune their hyperparameters with cross-validation, and how to choose between competing models with honest evidence.
 
 ---
@@ -22,7 +22,7 @@
 | **Kaggle Competition** | Apply this toolkit on a held-out scoring split | First public leaderboard ranking |
 | **L05 — Unsupervised Learning** | Find structure without labels | Clustering and dimensionality reduction |
 
-**The narrative thread:** Sarah's L03 logistic regression scored recall = 26% at the chosen threshold. This week she has to beat it.
+**The narrative thread:** Sarah's L03 logistic regression scored recall = 26% at the chosen threshold. Today she has to beat it.
 
 ---
 
